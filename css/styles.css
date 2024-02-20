@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+  }
+  
+  :root {
+    --orange: #e28625;
+    --blue: #006971;
+    --green: #004140;
+  }
+  
+  body {
+    color: white;
+    background-color: #f2f2f2;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  
+  .main {
+    padding: 1.5rem;
+  }
+  
+  @media screen and (width >= 768px) {
+    .main {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0;
+    }
+  }
+  
+  .card {
+    padding: 3.0625rem;
+    height: 27.625rem;
+  }
+  
+  @media screen and (width >= 768px) {
+    .card {
+      display: inline-block;
+      width: 307px;
+    }
+  }
+  
+  .card-orange {
+    background-color: var(--orange);
+  }
+  
+  .card-blue {
+    background-color: var(--blue);
+  }
+  
+  .card-green {
+    background-color: var(--green);
+  }
+  
+  .first-card {
+    /* border-radius: 8px 8px 0 0; */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  @media screen and (width>=768px) {
+    .first-card {
+      border-radius: 8px 0 0 8px;
+    }
+  }
+  
+  .third-card {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  
+  @media screen and (width>=768px) {
+    .third-card {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+  
+  .card-title {
+    font-size: 2.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    margin-bottom: 2.8125rem;
+  }
+  
+  .card-button {
+    padding: 0.75rem 2rem;
+    background-color: #fff;
+    border-radius: 1.5625rem;
+    font-size: 0.9375rem;
+  }
+  
+  @media (hover: hover) {
+    .card-button:hover {
+      background-color: transparent;
+      color: white;
+      outline: 1px solid white;
+    }
+  }
+  
+  .card-button-orange {
+    color: var(--orange);
+  }
+  
+  .card-button-blue {
+    color: var(--blue);
+  }
+  
+  .card-button-green {
+    color: var(--green);
+  }
+  
